@@ -6,7 +6,7 @@ import {
   instagramHandle,
   imgDir,
   soundcloudHandle,
-  bandcampHandle
+  bandcampHandle,
 } from '../data';
 
 export default class Social extends React.Component {
@@ -14,14 +14,14 @@ export default class Social extends React.Component {
     return (
       <div className="social">
         {twitterHandle && (
-          <a target="__blank" link={`https://www.twitter.com/${twitterHandle}`}>
+          <a target="__blank" href={`https://www.twitter.com/${twitterHandle}`}>
             <img src={`${imgDir}twitter.svg`} alt="tw" />
           </a>
         )}
         {instagramHandle && (
           <a
             target="__blank"
-            link={`https://www.instagram.com/${instagramHandle}`}
+            href={`https://www.instagram.com/${instagramHandle}`}
           >
             <img src={`${imgDir}instagram.svg`} alt="in" />
           </a>
@@ -29,13 +29,13 @@ export default class Social extends React.Component {
         {soundcloudHandle && (
           <a
             target="__blank"
-            link={`https://www.soundcloud.com/${soundcloudHandle}`}
+            href={`https://www.soundcloud.com/${soundcloudHandle}`}
           >
             <img src={`${imgDir}soundcloud.svg`} alt="sc" />
           </a>
         )}
         {bandcampHandle && (
-          <a target="__blank" link={`https://${bandcampHandle}.bandcamp.com`}>
+          <a target="__blank" href={`https://${bandcampHandle}.bandcamp.com`}>
             <img src={`${imgDir}bandcamp.svg`} alt="bc" />
           </a>
         )}
