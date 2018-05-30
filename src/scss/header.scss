@@ -1,5 +1,6 @@
 @import './colors.scss';
 @import './mixins.scss';
+@import './animations.scss';
 
 #Header {
   display: flex;
@@ -19,6 +20,7 @@
     }
   }
   .headerBorder {
+    animation: opacityRotate 16s ease infinite;
     display: flex;
     margin-top: 4px;
     height: 7px;
