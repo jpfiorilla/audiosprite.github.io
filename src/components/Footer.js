@@ -16,7 +16,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div id="Footer">
-        <div className="footerInner">
+        {/* <div className="footerInner">
           <div className="meatspace">
             <div className="title">Meatspace</div>
             <a target="__blank" href={gmapsLink}>
@@ -41,7 +41,7 @@ export default class Footer extends React.Component {
             </CopyToClipboard>
             <Social />
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

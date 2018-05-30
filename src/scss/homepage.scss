@@ -3,7 +3,7 @@
 
 #Homepage,
 #GamePage {
-  background: $darkBlue;
+  // background: $darkBlue;
   text-align: center;
   section:not(#Contact) {
     @include piecewise(padding, 0px 8px 30px, 0px calc(50% - 500px) 30px, 1000);

@@ -21,17 +21,19 @@ class App extends React.Component {
   render() {
     return (
       <div id="App">
-        <SEO />
-        <Header />
+        <div className="appBackground" />
+        <div className="appInner">
+          <SEO />
+          <Header />
 
-        <Switch>
-          <Route
-            exact
-            path="/"
-            component={Home}
-            {...pages.filter(page => page.path === '/')}
-          />
-          {/* {pages.map((page) => {
+          <Switch>
+            <Route
+              exact
+              path="/"
+              component={Home}
+              {...pages.filter(page => page.path === '/')}
+            />
+            {/* {pages.map((page) => {
             const Component = components[page.component] || DefaultComponent;
             return (
               <Route
@@ -42,15 +44,16 @@ class App extends React.Component {
               />
             );
           })} */}
-          <Route
-            path="/"
-            component={Home}
-            {...pages.filter(page => page.path === '/')}
-          />
-          <Route component={PageNotFound} />
-        </Switch>
+            <Route
+              path="/"
+              component={Home}
+              {...pages.filter(page => page.path === '/')}
+            />
+            <Route component={PageNotFound} />
+          </Switch>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
     );
   }

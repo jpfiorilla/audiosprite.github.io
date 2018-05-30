@@ -9,7 +9,7 @@ const anchors = ['Work', 'About', 'Contact'];
 export default function Header() {
   return (
     <div id="Header">
-      <div className="headerInner">
+      {/* <div className="headerInner">
         <div className="headerTop">
           <Link to="/" className="logoFull">
             <img src={imgDir + logoFull} alt="Orc Punk" />
@@ -23,7 +23,7 @@ export default function Header() {
             {anchor}
           </Scroll.Link>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

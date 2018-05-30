@@ -34,19 +34,32 @@ p {
 }
 
 #App {
-  display: flex;
-  flex-direction: column;
   width: 100vw;
   height: 100vh;
-  text-align: center;
-  color: $black;
-  background-color: $pink;
-  #Header,
-  #Footer {
-    flex: 0 1 auto;
+  position: relative;
+  .appBackground {
+    background-color: $pink;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: hueRotate infinite 60s;
   }
-  > div:not(#Header):not(#Footer) {
-    flex: 1;
+  .appInner {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: $black;
+    #Header,
+    #Footer {
+      flex: 0 1 auto;
+    }
+    > div:not(#Header):not(#Footer) {
+      flex: 1;
+    }
   }
 }
 
