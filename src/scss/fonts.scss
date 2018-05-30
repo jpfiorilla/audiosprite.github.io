@@ -1,0 +1,54 @@
+$fontDirectory: '../build/fonts/';
+
+@font-face {
+  font-family: 'Abel';
+  src: url('#{$fontDirectory}Abel-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Exo2';
+  src: url('#{$fontDirectory}Exo2-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Exo2-Black';
+  src: url('#{$fontDirectory}Exo2-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$fontDirectory}Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Titillium';
+  src: url('#{$fontDirectory}TitilliumWeb-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Orbitron-Black';
+	src: url('#{$fontDirectory}Orbitron-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Orbitron';
+	src: url('#{$fontDirectory}Orbitron-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'RobotoMono';
+	src: url('#{$fontDirectory}RobotoMono-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'RobotoMono-Light';
+	src: url('#{$fontDirectory}RobotoMono-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'SpaceMono';
+	src: url('#{$fontDirectory}SpaceMono-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'SpaceMono-Bold';
+	src: url('#{$fontDirectory}SpaceMono-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Muli';
+	src: url('#{$fontDirectory}Muli-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Muli-Bold';
+	src: url('#{$fontDirectory}Muli-BlackItalic.ttf') format('truetype');
+}

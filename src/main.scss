@@ -1,0 +1,20 @@
+@import '~piecewisecss/piecewise';
+@import '~scss-react-transition/scss-react-transition';
+
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+$globalMin: 480px;
+$globalMax: 1000px;
+
+@import './scss/colors';
+@import './scss/mixins';
+
+@import './scss/app.scss';
+@import './scss/footer.scss';
+@import './scss/header.scss';
+@import './scss/homepage.scss';
+@import './scss/newsletter.scss';
+@import './scss/ourGames.scss';
+@import './scss/hero.scss';
+@import './scss/game.scss';

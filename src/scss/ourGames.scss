@@ -1,0 +1,164 @@
+@import './colors.scss';
+@import './mixins.scss';
+
+#Work,
+#TheTeam {
+  .name,
+  .jobTitle,
+  .twitter,
+  .description,
+  .bottom {
+    font-family: 'Exo2', 'sans-serif';
+    text-align: left;
+  }
+}
+
+.games {
+  .card {
+    &:nth-child(n) {
+      background-color: $blue;
+      box-shadow: 0px 0px 80px $blue;
+    }
+    &:nth-child(2n) {
+      background-color: $purple;
+      box-shadow: 0px 0px 80px $purple;
+    }
+    &:nth-child(3n) {
+      background-color: $green;
+      box-shadow: 0px 0px 80px $green;
+    }
+    &:nth-child(4n) {
+      background-color: $yellow;
+      box-shadow: 0px 0px 80px $yellow;
+    }
+    &:nth-child(5n) {
+      background-color: $pink;
+      box-shadow: 0px 0px 80px $pink;
+    }
+    .cardImg {
+      min-height: 200px;
+    }
+  }
+}
+
+.members {
+  .card {
+    &:nth-child(n) {
+      background-color: $green;
+      box-shadow: 0px 0px 80px $green;
+    }
+    &:nth-child(2n) {
+      background-color: $blue;
+      box-shadow: 0px 0px 80px $blue;
+    }
+    &:nth-child(3n) {
+      background-color: $purple;
+      box-shadow: 0px 0px 80px $purple;
+    }
+    &:nth-child(4n) {
+      background-color: $pink;
+      box-shadow: 0px 0px 80px $pink;
+    }
+    &:nth-child(5n) {
+      background-color: $yellow;
+      box-shadow: 0px 0px 80px $yellow;
+    }
+    .cardImg {
+      min-height: 300px;
+    }
+  }
+}
+
+#Work,
+#TheTeam {
+  .games,
+  .members {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .card {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 25%;
+      min-width: 300px;
+      max-width: calc(100% - 10px);
+      padding: 8px 10px;
+      margin: 12px;
+      border-radius: 7px;
+      line-height: 1.25;
+      opacity: 1;
+      transition: 300ms ease;
+      & > * {
+        flex: 0 0 auto;
+      }
+      &:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+      .cardImg {
+        width: 100%;
+        background-position: center;
+        background-size: 100% auto;
+        background-size: cover;
+        border-radius: 5px;
+        box-shadow: 1px 2px 3px #fafafa;
+        margin-bottom: 4px;
+      }
+      .name {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        word-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 0 auto;
+        padding: 4px 8px 8px;
+        margin: 4px auto 12px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 4px;
+        box-shadow: 1px 2px 3px #fafafa;
+      }
+      .storeLinks {
+        padding: 4px 8px 8px;
+        margin: 8px auto 12px;
+        width: calc(100% - 16px);
+        border-bottom: 1px solid $darkPurple;
+        display: flex;
+        justify-content: space-between;
+        a {
+          display: inline-block;
+          opacity: 1;
+          transition: 150ms ease;
+          &:hover {
+            opacity: 0.9;
+          }
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .jobTitle,
+      .twitter {
+        opacity: 0.8;
+      }
+      .twitter {
+        display: inline-block;
+        transition: 150ms ease;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        .platforms > * {
+          @include clickAnimation();
+        }
+      }
+    }
+  }
+}

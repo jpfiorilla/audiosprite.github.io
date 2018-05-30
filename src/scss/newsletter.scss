@@ -1,0 +1,16 @@
+@import './colors.scss';
+@import './mixins.scss';
+
+#Newsletter {
+  iframe {
+  	height: 130px;
+  	background: '#fafafa';
+  	max-width: 1000px;
+  }
+}
+
+#Contact {
+  iframe {
+  	max-width: 1000px;
+  }
+}

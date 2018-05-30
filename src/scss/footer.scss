@@ -1,0 +1,67 @@
+@import './colors.scss';
+@import './mixins.scss';
+
+#Footer {
+  background-color: $black;
+  padding-bottom: 30px;
+  .footerInner {
+    display: flex;
+    color: $white;
+    margin: auto;
+    max-width: 1000px;
+    text-align: left;
+    .meatspace,
+    .cyberspace {
+      flex: 1 1 50%;
+      padding: 10px 20px;
+      @include antialiasing();
+      .title {
+        font-family: 'Exo2', sans-serif;
+        font-size: 24px;
+        margin-bottom: 4px;
+      }
+      .email {
+        display: flex;
+        align-items: center;
+        .emailSpan {
+          text-decoration: underline;
+          cursor: pointer;
+          opacity: 0.95;
+          font-family: 'Abel', sans-serif;
+          letter-spacing: 0.3px;
+          transition: 150ms ease;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .copied {
+          margin-left: 15px;
+          font-family: 'Exo2', sans-serif;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+          color: $yellow;
+          @keyframes fadein {
+            from {
+              transform: translateY(5px);
+              opacity: 0.3;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+          animation: fadein 1 100ms ease;
+        }
+      }
+      a {
+        font-family: 'Abel', sans-serif;
+        letter-spacing: 0.5px;
+        opacity: 0.95;
+        display: inline-block;
+        font-weight: bold;
+      }
+    }
+  }
+  .social {
+    margin-left: -15px;
+  }
+}

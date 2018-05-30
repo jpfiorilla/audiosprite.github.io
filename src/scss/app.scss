@@ -1,0 +1,55 @@
+@import './colors.scss';
+@import './mixins.scss';
+@import './fonts.scss';
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: $darkPurple;
+}
+
+section > .title {
+  font-family: 'Orbitron-Black', sans-serif;
+  text-transform: lowercase;
+  font-size: 48px;
+  @include piecewise(font-size, 36, 48);
+  color: $yellow;
+  display: flex;
+  align-self: left;
+  margin: 0 auto 40px auto;
+  @include antialiasing();
+  text-shadow: 0px 0px 100px $yellow;
+  letter-spacing: -0.5px;
+  word-spacing: 2px;
+  line-height: 0.5;
+  border-top: solid 1px $yellow;
+  padding-top: 18px;
+}
+
+p {
+  font-family: 'Abel', 'sans-serif';
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  text-align: left;
+}
+
+#App {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: $black;
+  background-color: $pink;
+  #Header,
+  #Footer {
+    flex: 0 1 auto;
+  }
+  > div:not(#Header):not(#Footer) {
+    flex: 1;
+  }
+}
+
+b {
+  font-weight: bold;
+}

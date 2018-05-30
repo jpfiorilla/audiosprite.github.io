@@ -1,0 +1,43 @@
+// useful links for building a palette:
+
+// palette references: https://dribbble.com/colors/66a1ee?percent=30
+// darken & brighten: https://www.hexcolortool.com/
+// color code triangulator: https://www.sessions.edu/color-calculator/
+
+$pink: #f9eef5;
+
+// orcpunk
+
+$white: #fafafa;
+$black: #000016;
+
+$grey: #b0b0b0;
+$darkGrey: #454955;
+
+$darkPurple: #1b1e37;
+$darkBlue: #080d39;
+$darkTeal: #3a474e;
+
+$blue: #1a9ef8;
+$green: #27ddd0;
+$yellow: #fffd00;
+$purple: #a359d7;
+// $pink: #ff1493;
+
+:export {
+  white: $white;
+  black: $black;
+
+  grey: $grey;
+  darkgrey: $darkGrey;
+
+  darkpurple: $darkPurple;
+  darkblue: $darkBlue;
+  darkteal: $darkTeal;
+
+  purple: $purple;
+  pink: $pink;
+  blue: $blue;
+  green: $green;
+  yellow: $yellow;
+}

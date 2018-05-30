@@ -1,0 +1,70 @@
+@import './colors.scss';
+@import './mixins.scss';
+
+.social {
+  @include piecewise(display, none, initial, 600px);
+  svg {
+    @include antialiasing();
+    .social-svg-icon {
+      fill: $white !important;
+    }
+  }
+}
+
+.headerBottom {
+  padding-bottom: 3px;
+  a {
+    text-transform: lowercase;
+    letter-spacing: 0.3px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    @include noSelect();
+    @media (min-width: 600px) {
+      &:nth-child(n) {
+        padding-left: 20%;
+      }
+      &:nth-child(2n) {
+        padding-left: 35px;
+      }
+      &:nth-child(3n) {
+        padding-left: 35px;
+      }
+    }
+    @include piecewise(margin, 0 10px, auto, 600px);
+    font-size: 18px;
+    @include piecewise(font-size, 12, 18);
+    color: $darkBlue;
+  }
+}
+
+#Header {
+  background: $green;
+  .headerInner {
+    max-width: 1000px;
+    display: inline-block;
+  }
+  .headerTop {
+    display: flex;
+    justify-content: space-between;
+    @include piecewise(justify-content, center, space-between, 600px);
+    align-items: center;
+    padding: 12px 10px 0px 10px;
+    @include piecewise(padding, 12px, 12px 10px 0px 10px);
+    .logoFull {
+      min-width: 250px;
+      max-width: 40%;
+      img {
+        width: 100%;
+      }
+    }
+    .logoSquare {
+      width: 80px;
+      max-width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .social {
+    }
+  }
+}
