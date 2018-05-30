@@ -12,6 +12,7 @@ import {
   SEO,
   components,
   DefaultComponent,
+  Video,
 } from '.';
 /* eslint-disable no-unused-vars */
 import colors from '../main.scss';
@@ -22,6 +23,7 @@ class App extends React.Component {
     return (
       <div id="App">
         <div className="appBackground" />
+        <Video />
         <div className="appInner">
           <SEO />
           <Header />
