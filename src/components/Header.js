@@ -26,6 +26,7 @@ export default function Header() {
         ))} */}
       </div>
       <div className="headerBorder" />
+      {/* <img src={`${imgDir}squiggle.svg`} /> */}
     </div>
   );
 }
