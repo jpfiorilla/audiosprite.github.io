@@ -19,7 +19,16 @@
     display: flex;
     height: 20px;
     background: url('/build/img/squiggle.svg') repeat;
-    background-size: 10px;
+    background-size: 30px;
+    @keyframes squiggle {
+      from {
+        background-position: 0 center;
+      }
+      to {
+        background-position: 60px center;
+      }
+    }
+    animation: squiggle infinite 2s linear;
   }
 }
 
