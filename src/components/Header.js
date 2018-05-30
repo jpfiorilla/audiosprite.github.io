@@ -11,6 +11,7 @@ export default function Header() {
     <div id="Header">
       <div className="headerInner">
         <div className="name">John Fio</div>
+        <div className="headerLinks" />
         {/* <div className="headerTop">
           <Link to="/" className="logoFull">
             <img src={imgDir + logoFull} alt="Orc Punk" />
