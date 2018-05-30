@@ -11,7 +11,7 @@
     justify-content: space-between;
     .name {
       font-size: 24px;
-      @include piecewise(font-size, 24, 32);
+      @include piecewise(font-size, 32, 48);
       font-weight: bold;
       font-family: Fakt, sans-serif;
       letter-spacing: 0.3px;
@@ -23,11 +23,12 @@
     animation: opacityRotate 16s ease infinite;
     display: flex;
     margin-top: 4px;
-    height: 7px;
+    height: 12px;
+    background-size: 45px;
+    @include piecewise(height, 8, 12, 800);
+    @include piecewise(background-size, 30, 45, 800);
     background-repeat: repeat-x;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift 6s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-100%);}}%3C/style%3E%3Cpath fill='none' stroke='#1c1c1c' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    background-size: 30px;
-    transition: 500ms;
     &:hover {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .6s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-100%);}}%3C/style%3E%3Cpath fill='none' stroke='#1c1c1c' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
     }
@@ -59,6 +60,7 @@
     img {
       @include antialiasing();
       width: 20px;
+      @include piecewise(width, 20, 30);
       .social-svg-icon {
         fill: $white !important;
       }
