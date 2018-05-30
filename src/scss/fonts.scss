@@ -1,54 +1,154 @@
 $fontDirectory: '../build/fonts/';
+$fontDirectoryOld: '../build/fonts-old/';
+
+// @font-face {
+//   font-family: 'Fakt Air';
+//   src: url('#{$fontDirectory}FaktPro-Air.eot');
+//   src: url('#{$fontDirectory}FaktPro-Air.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$fontDirectory}FaktPro-Air.woff') format('woff'),
+//     url('#{$fontDirectory}FaktPro-Air.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'Fakt Hair';
+  src: url('#{$fontDirectory}FaktPro-Hair.eot');
+  src: url('#{$fontDirectory}FaktPro-Hair.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$fontDirectory}FaktPro-Hair.woff') format('woff'),
+    url('#{$fontDirectory}FaktPro-Hair.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('#{$fontDirectory}FaktPro-Thin.eot');
+  src: url('#{$fontDirectory}FaktPro-Thin.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$fontDirectory}FaktPro-Thin.woff') format('woff'),
+    url('#{$fontDirectory}FaktPro-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'Fakt';
+//   src: url('#{$fontDirectory}FaktPro-ThinItalic.eot');
+//   src: url('#{$fontDirectory}FaktPro-ThinItalic.eot?#iefix')
+//       format('embedded-opentype'),
+//     url('#{$fontDirectory}FaktPro-ThinItalic.woff') format('woff'),
+//     url('#{$fontDirectory}FaktPro-ThinItalic.ttf') format('truetype');
+//   font-weight: 100;
+//   font-style: italic;
+// }
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('#{$fontDirectory}FaktPro-Light.eot');
+  src: url('#{$fontDirectory}FaktPro-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$fontDirectory}FaktPro-Light.woff') format('woff'),
+    url('#{$fontDirectory}FaktPro-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('#{$fontDirectory}FaktPro-Blond.eot');
+  src: url('#{$fontDirectory}FaktPro-Blond.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$fontDirectory}FaktPro-Blond.woff') format('woff'),
+    url('#{$fontDirectory}FaktPro-Blond.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('#{$fontDirectory}FaktPro-Normal.eot');
+  src: url('#{$fontDirectory}FaktPro-Normal.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$fontDirectory}FaktPro-Normal.woff') format('woff'),
+    url('#{$fontDirectory}FaktPro-Normal.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('#{$fontDirectory}FaktPro-Medium.eot');
+  src: url('#{$fontDirectory}FaktPro-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$fontDirectory}FaktPro-Medium.woff') format('woff'),
+    url('#{$fontDirectory}FaktPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('#{$fontDirectory}FaktPro-SemiBold.eot');
+  src: url('#{$fontDirectory}FaktPro-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$fontDirectory}FaktPro-SemiBold.woff') format('woff'),
+    url('#{$fontDirectory}FaktPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Abel';
-  src: url('#{$fontDirectory}Abel-Regular.ttf') format('truetype');
+  src: url('#{$fontDirectoryOld}Abel-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Exo2';
-  src: url('#{$fontDirectory}Exo2-Regular.ttf') format('truetype');
+  src: url('#{$fontDirectoryOld}Exo2-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Exo2-Black';
-  src: url('#{$fontDirectory}Exo2-Black.ttf') format('truetype');
+  src: url('#{$fontDirectoryOld}Exo2-Black.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
-  src: url('#{$fontDirectory}Roboto-Regular.ttf') format('truetype');
+  src: url('#{$fontDirectoryOld}Roboto-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Titillium';
-  src: url('#{$fontDirectory}TitilliumWeb-Bold.ttf') format('truetype');
+  src: url('#{$fontDirectoryOld}TitilliumWeb-Bold.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'Orbitron-Black';
-	src: url('#{$fontDirectory}Orbitron-Black.ttf') format('truetype');
+  font-family: 'Orbitron-Black';
+  src: url('#{$fontDirectoryOld}Orbitron-Black.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'Orbitron';
-	src: url('#{$fontDirectory}Orbitron-Regular.ttf') format('truetype');
+  font-family: 'Orbitron';
+  src: url('#{$fontDirectoryOld}Orbitron-Regular.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'RobotoMono';
-	src: url('#{$fontDirectory}RobotoMono-Regular.ttf') format('truetype');
+  font-family: 'RobotoMono';
+  src: url('#{$fontDirectoryOld}RobotoMono-Regular.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'RobotoMono-Light';
-	src: url('#{$fontDirectory}RobotoMono-Light.ttf') format('truetype');
+  font-family: 'RobotoMono-Light';
+  src: url('#{$fontDirectoryOld}RobotoMono-Light.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'SpaceMono';
-	src: url('#{$fontDirectory}SpaceMono-Regular.ttf') format('truetype');
+  font-family: 'SpaceMono';
+  src: url('#{$fontDirectoryOld}SpaceMono-Regular.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'SpaceMono-Bold';
-	src: url('#{$fontDirectory}SpaceMono-Bold.ttf') format('truetype');
+  font-family: 'SpaceMono-Bold';
+  src: url('#{$fontDirectoryOld}SpaceMono-Bold.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'Muli';
-	src: url('#{$fontDirectory}Muli-Regular.ttf') format('truetype');
+  font-family: 'Muli';
+  src: url('#{$fontDirectoryOld}Muli-Regular.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'Muli-Bold';
-	src: url('#{$fontDirectory}Muli-BlackItalic.ttf') format('truetype');
+  font-family: 'Muli-Bold';
+  src: url('#{$fontDirectoryOld}Muli-BlackItalic.ttf') format('truetype');
 }
