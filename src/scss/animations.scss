@@ -1,8 +1,9 @@
 @keyframes hueRotate {
-  0% {
+  0%,
+  100% {
     filter: hue-rotate(0deg);
   }
-  100% {
+  50% {
     filter: hue-rotate(-100deg);
   }
 }

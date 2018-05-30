@@ -44,7 +44,7 @@ p {
     position: absolute;
     left: 0;
     top: 0;
-    animation: hueRotate infinite 60s;
+    animation: hueRotate infinite 40s;
   }
   .appInner {
     display: flex;
@@ -53,6 +53,7 @@ p {
     height: 100vh;
     text-align: center;
     color: $black;
+    position: relative;
     #Header,
     #Footer {
       flex: 0 1 auto;

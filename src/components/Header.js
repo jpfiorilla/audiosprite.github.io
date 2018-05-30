@@ -9,8 +9,9 @@ const anchors = ['Work', 'About', 'Contact'];
 export default function Header() {
   return (
     <div id="Header">
-      {/* <div className="headerInner">
-        <div className="headerTop">
+      <div className="headerInner">
+        <div className="name">John Fio</div>
+        {/* <div className="headerTop">
           <Link to="/" className="logoFull">
             <img src={imgDir + logoFull} alt="Orc Punk" />
           </Link>
@@ -22,8 +23,9 @@ export default function Header() {
           <Scroll.Link key={anchor} to={anchor} smooth duration={500}>
             {anchor}
           </Scroll.Link>
-        ))}
-      </div> */}
+        ))} */}
+      </div>
+      <div className="headerBorder" />
     </div>
   );
 }
