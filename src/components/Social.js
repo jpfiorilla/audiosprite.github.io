@@ -1,12 +1,45 @@
 import * as React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import { facebookPage, twitterHandle, instagramHandle } from '../data';
+import {
+  facebookPage,
+  twitterHandle,
+  instagramHandle,
+  imgDir,
+  soundcloudHandle,
+  bandcampHandle
+} from '../data';
 
-export default class Footer extends React.Component {
+export default class Social extends React.Component {
   render() {
     return (
       <div className="social">
-        {facebookPage ? (
+        {twitterHandle && (
+          <a target="__blank" link={`https://www.twitter.com/${twitterHandle}`}>
+            <img src={`${imgDir}twitter.svg`} alt="tw" />
+          </a>
+        )}
+        {instagramHandle && (
+          <a
+            target="__blank"
+            link={`https://www.instagram.com/${instagramHandle}`}
+          >
+            <img src={`${imgDir}instagram.svg`} alt="in" />
+          </a>
+        )}
+        {soundcloudHandle && (
+          <a
+            target="__blank"
+            link={`https://www.soundcloud.com/${soundcloudHandle}`}
+          >
+            <img src={`${imgDir}soundcloud.svg`} alt="sc" />
+          </a>
+        )}
+        {bandcampHandle && (
+          <a target="__blank" link={`https://${bandcampHandle}.bandcamp.com`}>
+            <img src={`${imgDir}bandcamp.svg`} alt="bc" />
+          </a>
+        )}
+        {/* {facebookPage ? (
           <SocialIcon
             color="transparent"
             url={
@@ -35,7 +68,7 @@ export default class Footer extends React.Component {
                 : `https://instagram.com/${twitterHandle.replace(/\W/g, '')}`
             }
           />
-        ) : null}
+        ) : null} */}
       </div>
     );
   }

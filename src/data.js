@@ -4,9 +4,10 @@ import { serialize } from './utils';
 export const siteName = 'OrcPunk';
 export const email = 'hello@orcpunk.com';
 
-export const instagramHandle = 'orcpunk';
-export const facebookPage = 'orcpunk';
-export const twitterHandle = 'orcpunk';
+export const instagramHandle = 'audiosprite';
+export const twitterHandle = 'audiosprite';
+export const soundcloudHandle = 'audiosprite';
+export const bandcampHandle = 'audiosprite';
 
 export const address = ['195 Plymouth St', 'Suite 2-9', 'Brooklyn, NY 11201'];
 export const gmapsLink = 'https://goo.gl/maps/5iRLGapdUwr';

@@ -7,6 +7,7 @@
   padding: 20px 16px;
   .headerInner {
     display: flex;
+    justify-content: space-between;
     .name {
       font-size: 24px;
       @include piecewise(font-size, 24, 32);
@@ -28,85 +29,37 @@
     &:hover {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .6s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-100%);}}%3C/style%3E%3Cpath fill='none' stroke='#1c1c1c' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
     }
-    // @include piecewise(background-size, 13, 15);
-    // background-position: 0 1.2em;
-    // background-size: auto 5px;
-    // @keyframes squiggle {
-    //   from {
-    //     background-position: 0 center;
-    //   }
-    //   to {
-    //     background-position: 60px center;
-    //   }
-    // }
-    // animation: squiggle infinite 2s linear;
   }
 }
 
-// .social {
-//   @include piecewise(display, none, initial, 600px);
-//   svg {
-//     @include antialiasing();
-//     .social-svg-icon {
-//       fill: $white !important;
-//     }
-//   }
-// }
-
-// .headerBottom {
-//   padding-bottom: 3px;
-//   a {
-//     text-transform: lowercase;
-//     letter-spacing: 0.3px;
-//     font-family: 'Orbitron', sans-serif;
-//     cursor: pointer;
-//     @include noSelect();
-//     @media (min-width: 600px) {
-//       &:nth-child(n) {
-//         padding-left: 20%;
-//       }
-//       &:nth-child(2n) {
-//         padding-left: 35px;
-//       }
-//       &:nth-child(3n) {
-//         padding-left: 35px;
-//       }
-//     }
-//     @include piecewise(margin, 0 10px, auto, 600px);
-//     font-size: 18px;
-//     @include piecewise(font-size, 12, 18);
-//     color: $darkBlue;
-//   }
-// }
-
-// #Header {
-//   background: $green;
-//   .headerInner {
-//     max-width: 1000px;
-//     display: inline-block;
-//   }
-//   .headerTop {
-//     display: flex;
-//     justify-content: space-between;
-//     @include piecewise(justify-content, center, space-between, 600px);
-//     align-items: center;
-//     padding: 12px 10px 0px 10px;
-//     @include piecewise(padding, 12px, 12px 10px 0px 10px);
-//     .logoFull {
-//       min-width: 250px;
-//       max-width: 40%;
-//       img {
-//         width: 100%;
-//       }
-//     }
-//     .logoSquare {
-//       width: 80px;
-//       max-width: 50%;
-//       img {
-//         width: 100%;
-//       }
-//     }
-//     .social {
-//     }
-//   }
-// }
+.social {
+  // @include piecewise(display, none, initial, 600px);
+  display: flex;
+  align-items: center;
+  a {
+    margin: 0 5px;
+    opacity: 0.9;
+    transition: opacity 150ms ease, transform 75ms ease;
+    cursor: pointer;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      opacity: 0.6;
+      transform: translateY(-1px);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+    img {
+      @include antialiasing();
+      width: 20px;
+      .social-svg-icon {
+        fill: $white !important;
+      }
+    }
+  }
+}
